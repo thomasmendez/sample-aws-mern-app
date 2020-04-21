@@ -19,6 +19,9 @@ require('./passport_setup')(passport);
 
 var app = express();
 
+var mongoose = require('mongoose');
+mongoose.connect(process.env.NODE_MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+
 // don't need these if 
 // we want to return differnt status
 // codes other than 200 

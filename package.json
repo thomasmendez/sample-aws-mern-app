@@ -8,7 +8,8 @@
     "dev": "npm-run-all -p server client",
     "server": "cross-env DEBUG=server:* nodemon --watch ./src/server ./src/server/bin/www",
     "client": "webpack-dev-server",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "autoprefixer": "^9.7.6",
     "bcrypt": "^4.0.1",
     "bootstrap": "^4.4.1",
+    "chai": "^4.2.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "css-loader": "^3.5.2",
@@ -32,6 +34,7 @@
     "express": "~4.16.1",
     "express-session": "^1.17.1",
     "jquery": "^3.5.0",
+    "mocha": "^7.1.1",
     "mongoose": "^5.9.9",
     "morgan": "~1.9.1",
     "passport": "^0.4.1",

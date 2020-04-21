@@ -11,7 +11,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
-        port: 3000,
+        port: process.env.REACT_APP_PORT,
         //open: true,
         hot: true,
         historyApiFallback: true

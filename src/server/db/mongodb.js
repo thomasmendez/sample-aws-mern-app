@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect(process.env.NODE_MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect(process.env.NODE_MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 // import models that will be used
 // all models will need their schema to make a query search
