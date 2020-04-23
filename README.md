@@ -41,11 +41,11 @@ Once the EC2 instance reaches a running state you can connect to it via SSH usin
 The below command executes a script to automatically setup and configure a production ready MERN Stack web server on Ubuntu that includes Node.js, MongoDB, PM2, NGINX and UFW.
 
 While connected to the new AWS EC2 instance in the terminal window, run the following command:
-```sudo bash /sample-aws-mern-app/ubuntu_setup/shellScripts/install.sh```
+```sudo bash /sample-aws-mern-app/ubuntu_setup/shell/manual/install.sh```
 
 ### Setup Environment Variables
 
-Setup the correct environment variables in the .env file for this directory. Run this command to edit the prod.env file using the nano editor.
+Setup the correct environment variables in the .env file for this directory. Run this command to edit the prod.env file using the nano editor and save it as the .env file.
 ```
 sudo nano .prod.env
 ```
@@ -157,9 +157,9 @@ Unit testing is done with the javascript frameworks Mocha and Chai
 
 1. In terminal where sample-aws-mern-app folder is located run
 
-    ```
-    npm test
-    ```
+```
+npm test
+```
 
 ## MERN Stack App Built With
 

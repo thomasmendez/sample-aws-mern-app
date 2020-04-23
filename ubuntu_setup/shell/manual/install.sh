@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# manual install on AWS Ubuntu Server 18.04 
+
 echo "
 ----------------------
   NODE & NPM
@@ -84,4 +86,15 @@ echo "
 
 # install npm packages 
 
-sudo npm install -p ../../
+sudo npm install
+
+echo "
+----------------------
+  ENV CONFIGURATION
+----------------------
+"
+
+sudo cp .dev.env .env
+
+echo "Created .env file from .dev.env"
+echo "Use sudo nano .env to edit .env file to configure your environment"
