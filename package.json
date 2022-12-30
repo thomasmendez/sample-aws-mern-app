@@ -34,7 +34,7 @@
     "express": "~4.16.1",
     "express-session": "^1.17.1",
     "jquery": "^3.5.0",
-    "mocha": "^7.1.1",
+    "mocha": "^10.2.0",
     "mongoose": "^5.9.9",
     "morgan": "~1.9.1",
     "passport": "^0.4.1",
